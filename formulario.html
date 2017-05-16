@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title> Curso WEB </title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+<form method="POST" action="form.php">
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome"required>
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com"required>
+  </div>
+  <div class="form-group">
+    <label for="data">Nascimento</label>
+    <input type="date" name="data" id="data" class="form-control" required min="2016-01-05" max="2016-01-15">
+  </div>
+  <div class="form-group">
+    <label>Sexo</label>
+    <input type="radio" name="sexo" id="masculino">
+    <label for="Masculino">Masculino</label>
+    <input type="radio" name="sexo" id="feminino" >
+    <label for="feminino">Feminino</label>
+  </div>
+  <div class="form-group">
+    <label for="li">Li o contrato</label>
+    <input type="checkbox" name="li" id="li" required checked>
+  </div>
+  <div class="form-group">
+    <label for="volume">Volume</label>
+    <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+  </div>
+  <div class="form-group">
+    <label for="progress">Proresso</label>
+    <progress min="0" max="100" value="25">25</progress>
+  </div>
+  <div class="form-group">
+    <label for="meter">Carregando</label>
+    <meter min="0" name="meter" max="100" low="15" value="60">60%</meter>
+  </div>
+  <div class="form-group">
+    <label for="ano">Ano Frabricação</label>
+    <input type="number" name="ano" id="ano" min="1920" max="2020" value="2017" step="20" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="cor">Cor</label>
+    <input type="color" name="cor" id="cor"class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="url">URL</label>
+    <input type="url" name="url" id="url"class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="busca">Busca</label>
+    <input type="search" name="busca" id="busca"class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem" rows="8" cols="80"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="estados">Estado</label>
+    <select id="estados" name="estados" multiple size="3">
+      <option value="SP">São Paulo</option>
+      <option value="RJ" selected>Rio de Janeiro</option>
+      <option value="PB">Pernambuco</option>
+    </select>
+    </div>
+  <div class="form-group">
+    <label for="estados">Estado</label>
+    <select id="estados" name="estados" multiple size="3">
+
+      <optgroup label="Sudeste">
+
+        <option value="SP">São Paulo</option>
+        <option value="RJ" selected>Rio de Janeiro</option>
+        <option value="PR">Parana</option>
+
+      </optgroup>
+      <optgroup label="Sul">
+
+        <option value="PB">Pernambuco</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="RS">Rio Grande do Sul</option>
+
+      </optgroup>
+    </select>
+    </div>
+
+    <input type="hidden" name="id" value="1">
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="mes">Mês</label>
+      <input type="month" name="mes" id="mes" class="form-control">
+    </div>
+
+    <div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </div>
+</form>
+
+    </body>
+</html>
